@@ -1,0 +1,14 @@
+{
+  "title": "ICU Risk Dashboard",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Patient Risk",
+      "targets": [
+        {
+          "query": "from(bucket: \"icu\") |> range(start: -1m)"
+        }
+      ]
+    }
+  ]
+}
